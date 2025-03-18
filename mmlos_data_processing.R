@@ -9,7 +9,7 @@ library(tidyverse) # data munging
 # Direct link to zip file of data base: https://edg.epa.gov/EPADataCommons/public/OA/SLD/SmartLocationDatabaseV3.zip
 # Need to unzip, then bring in, comes as a geodatabase, with one block group file containing the entire database
 # zip file comes with data dictionary 
-# Quick and dirty... Open GDB in Arc, save shapefile, open DBF here... 
+# Quick and dirty... Open GDB in Arc, use 'Table to dBASE tool', open DBF here... 
 
 EPA <- foreign::read.dbf("data/SmartLocationDatabaseV3/EPA_SLD.dbf", as.is = F)
 
